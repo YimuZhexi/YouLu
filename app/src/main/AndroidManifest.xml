@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YouLu">
         <activity
-            android:name=".MainActivity"
+            android:name=".fragment.Fragment_Add"
+            android:exported="false" />
+        <activity
+            android:name=".main.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
