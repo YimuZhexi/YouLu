@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">YouLu</string>
     <string name="tianqi">tianQi</string>
+    <string name="loginApp">登录君の帐</string>
+    <string name="username">请输入用户名</string>
+    <string name="password">请输入密码</string>
+    <string name="login">登录</string>
+    <string name="qq">QQ</string>
+    <string name="wechat">weChat</string>
 </resources>
