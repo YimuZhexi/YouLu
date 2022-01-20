@@ -7,4 +7,8 @@
     <string name="login">登录</string>
     <string name="qq">QQ</string>
     <string name="wechat">weChat</string>
+    <string name="captcha">请输入验证码</string>
+    <string name="getCaptcha">获取验证码</string>
+    <string name="phoneNumber">请输入手机号</string>
+    <string name="yes">确定</string>
 </resources>

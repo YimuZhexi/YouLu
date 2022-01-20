@@ -80,4 +80,9 @@ switch (v.getId()){
     private void login(){
 
     }
+
+    //登陆成功
+    private void loginSuccess(){
+
+    }
 }
