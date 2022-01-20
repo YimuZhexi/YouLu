@@ -3,6 +3,7 @@ package com.example.youlu.login;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +11,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.example.youlu.R;
+import com.example.youlu.dialog.PhoneDialog;
+import com.example.youlu.main.MainActivity;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -34,16 +37,16 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
     //绑定控件
-    private void initView(){
-        etUsername=findViewById(R.id.et_login_username);
-        etPassword=findViewById(R.id.et_login_password);
-        btnLogin=findViewById(R.id.btn_login_login);
-        ivQQ=findViewById(R.id.iv_login_qq);
-        ivWeChat=findViewById(R.id.iv_login_wechat);
+    private void initView() {
+        etUsername = findViewById(R.id.et_login_username);
+        etPassword = findViewById(R.id.et_login_password);
+        btnLogin = findViewById(R.id.btn_login_login);
+        ivQQ = findViewById(R.id.iv_login_qq);
+        ivWeChat = findViewById(R.id.iv_login_wechat);
     }
 
     //设置监听
-    private void setView(){
+    private void setView() {
         btnLogin.setOnClickListener(this);
         ivWeChat.setOnClickListener(this);
         ivQQ.setOnClickListener(this);
@@ -53,36 +56,41 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
-switch (v.getId()){
-    case R.id.btn_login_login:
-        login();
-        break;
-    case R.id.iv_login_qq:
-        qqLogin();
-        break;
-    case R.id.iv_login_wechat:
-        weChatLogin();
-        break;
-}
+        switch (v.getId()) {
+            case R.id.btn_login_login:
+                login();
+                break;
+            case R.id.iv_login_qq:
+                qqLogin();
+                break;
+            case R.id.iv_login_wechat:
+                weChatLogin();
+                break;
+        }
     }
 
     //QQ登录
-    private void qqLogin(){
+    private void qqLogin() {
 
     }
 
     //微信登陆
-    private void weChatLogin(){
+    private void weChatLogin() {
 
     }
 
     //普通登录
-    private void login(){
+    private void login() {
 
     }
 
-    //登陆成功
-    private void loginSuccess(){
+    //弹出dialog
+    private void showDialog(){
+        PhoneDialog.newInstance().show(getSupportFragmentManager(),"dialog");
+    }
 
+    //登陆成功
+    private void loginSuccess() {
+        MainActivity.startActivity(this);
     }
 }

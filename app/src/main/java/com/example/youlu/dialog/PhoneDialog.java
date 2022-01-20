@@ -82,5 +82,6 @@ public class PhoneDialog extends DialogFragment implements View.OnClickListener 
     //确认登陆
     private void yes() {
 
+        dismiss();
     }
 }
