@@ -11,6 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YouLu">
         <activity
+            android:name=".dialog.CreateDialog"
+            android:exported="false" />
+        <activity
             android:name=".dialog.PhoneDialog"
             android:exported="false"
             tools:ignore="Instantiatable" />

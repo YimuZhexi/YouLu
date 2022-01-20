@@ -76,11 +76,13 @@ public class PhoneDialog extends DialogFragment implements View.OnClickListener 
 
     //获取验证码
     private void getCaptcha() {
+        String phoneNumber = etPhone.getText().toString();
 
     }
 
     //确认登陆
     private void yes() {
+        String captcha = etCaptcha.getText().toString();
 
         dismiss();
     }

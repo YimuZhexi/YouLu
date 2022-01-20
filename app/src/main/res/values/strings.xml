@@ -11,4 +11,5 @@
     <string name="getCaptcha">获取验证码</string>
     <string name="phoneNumber">请输入手机号</string>
     <string name="yes">确定</string>
+    <string name="back">返回</string>
 </resources>

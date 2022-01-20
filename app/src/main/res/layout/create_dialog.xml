@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dialog.CreateDialog">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_create_username"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        app:layout_constraintBottom_toTopOf="@+id/til_create_password"
+        app:layout_constraintEnd_toEndOf="@+id/til_create_password"
+        app:layout_constraintStart_toStartOf="@+id/til_create_password">
+
+        <EditText
+            android:id="@+id/et_create_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="USERNAME"
+            android:background="@color/white"
+            android:inputType="text"
+            android:lines="1"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_create_password"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/til_create_password2"
+        app:layout_constraintEnd_toEndOf="@+id/til_create_password2"
+        app:layout_constraintStart_toStartOf="@+id/til_create_password2">
+
+        <EditText
+            android:id="@+id/et_create_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="PASSWORD"
+            android:background="@color/white"
+            android:inputType="textPassword"
+            android:lines="1"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_create_password2"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        app:layout_constraintBottom_toTopOf="@+id/btn_create_yes"
+        app:layout_constraintEnd_toEndOf="@+id/btn_create_yes"
+        app:layout_constraintStart_toStartOf="@+id/btn_create_yes">
+
+        <EditText
+            android:id="@+id/et_create_password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="PASSWORD"
+            android:background="@color/white"
+            android:inputType="textPassword"
+            android:lines="1"
+            tools:ignore="LabelFor" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_create_yes"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/yes"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_create_back"
+        app:layout_constraintEnd_toEndOf="@+id/btn_create_back"
+        app:layout_constraintStart_toStartOf="@+id/btn_create_back" />
+
+    <Button
+        android:id="@+id/btn_create_back"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="320dp"
+        android:hint="@string/back"
+        android:textColorHint="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
