@@ -12,4 +12,5 @@
     <string name="phoneNumber">请输入手机号</string>
     <string name="yes">确定</string>
     <string name="back">返回</string>
+    <string name="add_button">add_button</string>
 </resources>

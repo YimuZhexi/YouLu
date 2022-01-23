@@ -5,11 +5,15 @@
       <map>
         <entry key="..\:/YULU/YouLu/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.26979166666666665" />
         <entry key="..\:/YULU/YouLu/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26979166666666665" />
+        <entry key="..\:/YULU/YouLu/app/src/main/res/layout-w1240dp/item_thing.xml" value="0.1536144578313253" />
+        <entry key="..\:/YULU/YouLu/app/src/main/res/layout-w936dp/item_thing.xml" value="0.190234375" />
         <entry key="..\:/YULU/YouLu/app/src/main/res/layout/activity_login.xml" value="0.21359649122807017" />
         <entry key="..\:/YULU/YouLu/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/YULU/YouLu/app/src/main/res/layout/create_dialog.xml" value="0.21359649122807017" />
         <entry key="..\:/YULU/YouLu/app/src/main/res/layout/fragment_add.xml" value="0.25364583333333335" />
+        <entry key="..\:/YULU/YouLu/app/src/main/res/layout/item_thing.xml" value="0.4" />
         <entry key="..\:/YULU/YouLu/app/src/main/res/layout/phone_dialog.xml" value="0.2013157894736842" />
+        <entry key="..\:/YULU/YouLu/app/src/main/res/layout/recycler_thing.xml" value="0.2013157894736842" />
       </map>
     </option>
   </component>
